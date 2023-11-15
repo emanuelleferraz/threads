@@ -13,9 +13,6 @@ public class TesteThread {
         t1.join();
         t2.join();
 
-        System.out.println("Incremento:");
-        System.out.println("Resultado do valor final do Contador: " + c.getVarCont());
-
         ThreadDecremento t3 = new ThreadDecremento(c);
         ThreadDecremento t4 = new ThreadDecremento(c);
         
@@ -25,7 +22,6 @@ public class TesteThread {
         t3.join();
         t4.join();
 
-        System.out.println("Decremento:");
         System.out.println(("Resultado do valor final do Contador: " + c.getVarCont()));
     }
     
